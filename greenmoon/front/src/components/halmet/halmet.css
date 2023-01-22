@@ -1,0 +1,23 @@
+.nav {
+    min-width: 100vw;
+    min-height: 10vh;
+    text-align: center;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 4vh;
+    font-weight: 600;
+    margin: auto 0 auto 1.5vw;
+    line-height: 4vh;
+    color: darkslategray;
+}
+
+.right-container{
+    display: flex;
+    max-height: 3vh;
+    margin-right: 1.5vw;
+}

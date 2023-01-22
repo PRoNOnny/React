@@ -1,0 +1,35 @@
+.text {
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+.form {
+    display: flex;
+    height: 3vh;
+    gap: 0.5vw;
+    justify-content: flex-end;
+}
+
+.button-text {
+    font-size: 1.5vh;
+    font-weight: 600;
+    padding: .5vh .8vw !important;
+    border-width: .1vh;
+    border-radius: 1vw;
+    color: gray;
+    cursor: pointer;
+}
+
+.button-text:hover{
+    color: black;
+}
+
+.input {
+    max-width: 10vw;
+    min-width: 10vw;
+    border-width: .1vw;
+    border-radius: .3vw;
+    font-size: calc(100% - .1vw);
+    padding: .2vh .3vw !important;
+    outline: -webkit-focus-ring-color 0.1vw !important;
+}

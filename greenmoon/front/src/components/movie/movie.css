@@ -1,0 +1,24 @@
+.list {
+    width: 95%;
+    height: 85vh;
+    background-color: aliceblue;
+    margin: 3.5vh auto 1.5vh;
+    border-radius: .2vw;
+    overflow: auto;
+    padding: 0.5em;
+    display: flex;
+}
+
+.card {
+    width: 33%;
+    min-width: 25rem;
+}
+
+.container {
+    display: flex;
+    flex: 1 1 33%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5%;
+    justify-content: space-evenly;
+}
