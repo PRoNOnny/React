@@ -1,14 +1,6 @@
 import React from "react";
 import Container from "@mui/material/Container";
-import { Stack, Paper, styled } from "@mui/material";
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: 'darkcyan',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: 'white',
-}));
+import { Box } from "@mui/material";
 
 export default class Sidebar extends React.Component {
   constructor(props) {
@@ -21,16 +13,26 @@ export default class Sidebar extends React.Component {
       <Container
         sx={{
           width: "15rem",
-          padding: "1rem 2rem",
+          padding: "2rem 0px 2rem 2rem !important",
           backgroundColor: "white",
           height: "100%",
         }}
       >
-        <Stack spacing={1}>
-          <Item>Movie</Item>
-          <Item>Favorite</Item>
-          <Item>Register</Item>
-        </Stack>
+        <Box
+          sx={{
+            width: "auto",
+            height: "3rem",
+            color: "gray",
+            fontWeight:"600",
+            fontSize:"1rem",
+            "&:hover": {
+              color: "black",
+              opacity: [0.9, 0.8, 0.7],
+            },
+          }}
+        >
+          Movies
+        </Box>
       </Container>
     );
   }
