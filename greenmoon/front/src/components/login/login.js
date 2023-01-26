@@ -46,7 +46,8 @@ export default class LoginControl extends React.Component {
           <span className="text">{this.state.name}</span>
           <span className="material-icons">settings</span>
           <Button
-            variant="outlined"
+            variant="contained"
+            size="small"
             type="submit"
             onClick={this.handleLogoutClick}
           >
@@ -62,7 +63,7 @@ export default class LoginControl extends React.Component {
             <input className="input" name="username" type="text"></input>
             <span className="text">Password</span>
             <input className="input" name="password" type="password"></input>
-            <Button variant="outlined" type="submit">
+            <Button variant="contained" type="submit" size="small">
               Login
             </Button>
           </form>

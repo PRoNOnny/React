@@ -2,10 +2,8 @@ import React from "react";
 import "./movie.css";
 import BaseApi from "./../../api/api";
 import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 const baseApi = new BaseApi();
 
@@ -24,7 +22,6 @@ export default class MovieGallary extends React.Component {
 
   render() {
     let movieList = this.state.movie;
-    console.log(movieList);
     return (
       <div className="list">
         <div className="container">

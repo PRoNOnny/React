@@ -8,11 +8,11 @@ export default function Halmet() {
   return (
     <>
       <Navbar></Navbar>
-      <Grid container spacing={2}>
-        <Grid xs={2}>
+      <Grid container sx={{height:'90vh'}}>
+        <Grid item xs="auto">
           <Sidebar></Sidebar>
         </Grid>
-        <Grid xs={10}>
+        <Grid item xs>
           <MovieGallary></MovieGallary>
         </Grid>
       </Grid>
